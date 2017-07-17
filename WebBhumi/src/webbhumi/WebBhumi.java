@@ -5,51 +5,30 @@
  */
 package webbhumi;
 
-import java.awt.SystemColor;
-
 /**
  *
  * @author web-bhumi
  */
 public class WebBhumi {
-// public protected private "default"
+
+    /**
+     * @param args the command line arguments
+     */
+    // public protected private "default"
 // static "instance"==> objects's variable    
     static int a = 12;
     int b = 35;
+
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println(a);
-        checkMe1();
+        WebBhumi b1 = new WebBhumi();
+        WebBhumi b2 = new WebBhumi();
+        b2.b = 44;
+        System.out.println(b1.b);
+        b2.a = 10;
+        System.out.println(b2.a);
+        System.out.println(b1.a);
 
-
-        
-//Q) New reffrence with name b1 of same class
-//A) We cannot create two or more variable/reffrence with same name 
-//   in same scope
     }
- /* 
-    now we have two methods we area going to creata int a in both
-    */
-    
-    static void checkMe1()
-    {
-        int a=10;
-        System.out.println(WebBhumi.a);
-       // System.out.println(this.b);
-        
-        
-    }
-    void checkMe2()
-    {
-        int b=16;
-        System.out.println(b);
-        System.out.println(this.b);
-        
-    }
-    
-    
-    
-    
-    
 
 }
