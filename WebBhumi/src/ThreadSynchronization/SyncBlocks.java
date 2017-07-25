@@ -3,25 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package InherianceReVisited;
+package ThreadSynchronization;
 
 /**
  *
  * @author web-bhumi
  */
-class Test
-{
- 
-}
-
-
-
-
-public  class AbstractClass extends Test
-{
+public class SyncBlocks {
     
-static {
-    System.out.println("I am static");
-}
- 
 }
