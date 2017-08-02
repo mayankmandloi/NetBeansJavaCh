@@ -10,5 +10,19 @@ package ThreadSynchronization;
  * @author web-bhumi
  */
 public class SyncBlocks {
+    String s1;
+    int a;
+    void showName()
+    {
+        synchronized(s1)
+        {
+            System.out.println("Hello");
+        }
+        
+        synchronized(s1)
+        {
+            a++;
+        }
+    }
     
 }

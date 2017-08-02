@@ -15,8 +15,8 @@ class SynchronizedCounter {
     private int c = 0;
     String s="t";
 
-    //public synchronized void increment(int i) {
-    public void increment(int i) {
+    public synchronized void increment(int i) {
+    //public void increment(int i) {
         c+=i;
         try{
         Thread.sleep(2000);
