@@ -31,6 +31,7 @@ public class CrerateAFile {
         fis.write((byte)'u');
         fis.write((byte)'m');
         fis.write((byte)'i');
+        fis.close();
 
 
     }
