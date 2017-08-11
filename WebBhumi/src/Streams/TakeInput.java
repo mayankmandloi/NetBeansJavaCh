@@ -8,6 +8,7 @@ package Streams;
 import java.io.Console;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -20,7 +21,7 @@ public class TakeInput {
         String s = c.readLine();
         File f =  new File("1.txt");
         System.out.println(f.createNewFile());
-        FileOutputStream fos = new FileOutputStream(f);
+        /*FileOutputStream fos = new FileOutputStream(f);
         byte a[]=new byte[100];
         a=s.getBytes();
         for(int i=0;i<a.length;i++)
@@ -28,6 +29,11 @@ public class TakeInput {
             fos.write(a[i]);
         }
         fos.close();
-       
+       */
+        FileWriter fw = new FileWriter(f);
+        fw.write(s);
+
+//        fw.flush();
+//        fw.close();
     }
 }

@@ -20,7 +20,7 @@ public class BufferedInputStreamExample {
         InputStream iis = new FileInputStream("1.txt");
         BufferedInputStream is = new BufferedInputStream(iis);
         System.out.println((char)is.read());        
-        is.mark(0);
+        is.mark(1);
         System.out.println((char)is.read());
         System.out.println((char)is.read());
         System.out.println((char)is.read());
